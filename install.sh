@@ -7,7 +7,7 @@ echo "Resolvendo dependências..."
 
 if [ -f /etc/os-release ]; then
     source /etc/os-release
-    if [ "$ID" = "fedora"]; then
+    if [ "$ID" = "fedora" ]; then
         sudo dnf install java-17-openjdk
     else 
         echo "Não foi possível instalar o Java automaticamente."
